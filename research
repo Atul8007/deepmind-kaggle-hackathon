@@ -1,181 +1,209 @@
-# Kaggle: Measuring Progress Toward AGI - Cognitive Abilities
+# 🧠 Kaggle: Measuring Progress Toward AGI — Cognitive Abilities
 
-## Competition Overview
+## 📌 Competition Overview
 
-Google DeepMind launched a **hackathon** (not a traditional predict-a-target Kaggle competition) where you **design AI evaluations/benchmarks** — not train models. The goal is to build tests that measure how well frontier AI models perform on cognitive abilities that are currently poorly evaluated.
+Google DeepMind has launched a **hackathon-style Kaggle competition** (not a traditional predictive modeling challenge). Instead of training models, participants are tasked with **designing evaluation benchmarks** to measure AI cognitive abilities.
 
-- **Competition Page:** [Kaggle - Measuring Progress Toward AGI](https://www.kaggle.com/competitions/kaggle-measuring-agi)
-- **Platform:** Kaggle Community Benchmarks
-- **Organizer:** Google DeepMind
+**Goal:** Build tests that evaluate how well frontier AI systems perform on **under-measured cognitive capabilities**.
 
----
-
-## The Framework: 10 Cognitive Abilities
-
-DeepMind's paper identifies **10 cognitive abilities** important for general intelligence:
-
-| #  | Ability              | Status                                  |
-|----|----------------------|-----------------------------------------|
-| 1  | Perception           | Well-evaluated already                  |
-| 2  | Generation           | Well-evaluated already                  |
-| 3  | Memory               | Well-evaluated already                  |
-| 4  | Reasoning            | Well-evaluated already                  |
-| 5  | Problem Solving      | Well-evaluated already                  |
-| 6  | **Learning**         | **Evaluation gap — COMPETITION TRACK**  |
-| 7  | **Metacognition**    | **Evaluation gap — COMPETITION TRACK**  |
-| 8  | **Attention**        | **Evaluation gap — COMPETITION TRACK**  |
-| 9  | **Executive Functions** | **Evaluation gap — COMPETITION TRACK** |
-| 10 | **Social Cognition** | **Evaluation gap — COMPETITION TRACK**  |
-
-You must design benchmarks for one or more of the **5 underserved tracks**.
+- 🔗 **Competition Page:** https://www.kaggle.com/competitions/kaggle-measuring-agi  
+- 🏢 **Organizer:** Google DeepMind  
+- 🧪 **Platform:** Kaggle Community Benchmarks  
 
 ---
 
-## Prize Pool: $200,000
+## 🧩 The Framework: 10 Cognitive Abilities
 
-- **$10,000** for each of the top 2 submissions in each of the 5 tracks = $100,000
-- **$25,000** grand prizes for the 4 best overall submissions = $100,000
+DeepMind identifies **10 core cognitive abilities** relevant to AGI:
 
-## Timeline
+| #  | Ability                | Status                                  |
+|----|------------------------|-----------------------------------------|
+| 1  | Perception             | Well-evaluated                          |
+| 2  | Generation             | Well-evaluated                          |
+| 3  | Memory                 | Well-evaluated                          |
+| 4  | Reasoning              | Well-evaluated                          |
+| 5  | Problem Solving        | Well-evaluated                          |
+| 6  | **Learning**           | ⚠️ Evaluation Gap — Competition Track   |
+| 7  | **Metacognition**      | ⚠️ Evaluation Gap — Competition Track   |
+| 8  | **Attention**          | ⚠️ Evaluation Gap — Competition Track   |
+| 9  | **Executive Functions**| ⚠️ Evaluation Gap — Competition Track   |
+| 10 | **Social Cognition**   | ⚠️ Evaluation Gap — Competition Track   |
 
-| Milestone           | Date              |
-|---------------------|-------------------|
-| Submissions open    | March 17, 2026    |
-| Submissions close   | April 16, 2026    |
-| Results announced   | June 1, 2026      |
-
----
-
-## Platform: Kaggle Community Benchmarks
-
-This uses Kaggle's **Community Benchmarks** platform, which lets you:
-
-1. **Build tasks** — individual test cases for an AI model
-2. **Group tasks into a benchmark** — a suite that evaluates a specific ability
-3. **Run benchmarks against frontier models** — test how models perform on your evaluation
+👉 You must design benchmarks for one or more of the **5 underserved tracks**.
 
 ---
 
-## How to Crack This: Detailed Strategy
+## 💰 Prize Pool — $200,000
 
-### 1. Understand What They Want
-
-This is **not** about ML modeling. You're designing **tests for AI systems**, like a psychometrician designing IQ tests. The judges will evaluate:
-
-- **Validity** — Does your benchmark actually measure the claimed cognitive ability?
-- **Difficulty calibration** — Can it differentiate between models of varying capability?
-- **Novelty** — Does it test something existing benchmarks miss?
-- **Robustness** — Is it resistant to shortcuts/gaming?
-- **Scalability** — Can it measure progress over time as models improve?
-
-### 2. Pick Your Track Strategically
-
-#### Track 1: Learning
-
-- **Measures:** Ability to acquire and apply new knowledge from few examples
-- **Benchmark ideas:**
-  - In-context learning with novel symbolic systems
-  - Learning new languages/grammars from minimal examples
-  - Adapting to distribution shifts mid-task
-  - Curriculum learning where later tasks depend on earlier ones
-- **Edge:** Design tasks where memorization from pre-training can't help — use truly novel concepts invented for the benchmark
-
-#### Track 2: Metacognition
-
-- **Measures:** Self-awareness, knowing what you know/don't know, calibration
-- **Benchmark ideas:**
-  - Confidence calibration tests (does the model know when it's wrong?)
-  - Asking models to predict their own performance before attempting tasks
-  - Detecting when a problem is unsolvable
-  - Knowing when to ask for clarification vs. guess
-- **Edge:** This is arguably the **least crowded** track — metacognition in AI is under-researched. High potential for novelty.
-
-#### Track 3: Attention
-
-- **Measures:** Focusing on relevant info, filtering distractions
-- **Benchmark ideas:**
-  - Long-context needle-in-haystack variants
-  - Tasks with deliberately misleading/distracting information
-  - Selective processing under information overload
-  - Sustained attention over multi-step tasks
-- **Edge:** Go beyond simple retrieval — design tasks where the model must dynamically prioritize different information sources
-
-#### Track 4: Executive Functions
-
-- **Measures:** Planning, inhibition, cognitive flexibility, task switching
-- **Benchmark ideas:**
-  - Multi-step planning with constraints
-  - Tasks requiring the model to override a prepotent response (inhibition)
-  - Rapid task-switching evaluations
-  - Goal management with competing objectives
-- **Edge:** Draw directly from neuropsych tests (Wisconsin Card Sorting, Tower of London, Stroop test) and adapt them for LLMs
-
-#### Track 5: Social Cognition
-
-- **Measures:** Understanding social dynamics, theory of mind, pragmatics
-- **Benchmark ideas:**
-  - Advanced theory of mind (nested beliefs: "A thinks B thinks C knows...")
-  - Understanding sarcasm/irony in context
-  - Predicting social consequences of actions
-  - Navigating cultural norms, detecting deception
-- **Edge:** Go beyond simple ToM — test higher-order social reasoning that requires modeling multiple agents' mental states simultaneously
+- 🥇 **$10,000 × 2 winners × 5 tracks** = $100,000  
+- 🏆 **$25,000 × 4 overall winners** = $100,000  
 
 ---
 
-### 3. Design Principles for a Winning Submission
+## 🗓️ Timeline
 
-1. **Ground it in cognitive science literature** — Reference established tests from psychology/neuroscience and explain why your benchmark is a valid operationalization
-2. **Make it contamination-resistant** — Use procedurally generated tasks so models can't have memorized answers from training data
-3. **Include a difficulty gradient** — Easy tasks that current models pass + hard tasks they fail = you can track progress over time
-4. **Test multiple models** — Show that your benchmark discriminates between models (e.g., GPT-4 scores X, Gemini scores Y, Claude scores Z)
-5. **Provide clear scoring metrics** — Define exactly how performance is measured (accuracy, calibration error, F1, etc.)
-6. **Write excellent documentation** — Explain the cognitive science rationale, task design, and why existing benchmarks don't cover this
-
----
-
-### 4. Recommended Approach (Highest Win Probability)
-
-1. **Pick Metacognition or Social Cognition** — These have the biggest evaluation gaps and fewest existing benchmarks, giving you the most room for novelty
-2. **Read the DeepMind paper thoroughly** — Understand exactly how they define each ability and what gaps they identify
-3. **Survey existing benchmarks** — Know what's already been done (BigBench, HELM, MMLU, etc.) so you can argue why yours is different
-4. **Use procedural generation** — Build a task generator, not a static dataset. This makes your benchmark scalable and contamination-resistant
-5. **Pilot on Kaggle Community Benchmarks early** — Run your benchmark against available models and iterate before final submission
-6. **Focus on one track deeply** rather than spreading across multiple tracks
+| Milestone           | Date            |
+|---------------------|-----------------|
+| Submissions Open    | March 17, 2026  |
+| Submissions Close   | April 16, 2026  |
+| Results Announced   | June 1, 2026    |
 
 ---
 
-## Quick-Start Action Plan
+## 🛠️ Platform: Kaggle Community Benchmarks
 
-### Week 1 (Mar 17–23): Research
+This competition uses **Kaggle Community Benchmarks**, enabling you to:
 
-- [ ] Read the full DeepMind paper ([PDF](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/measuring-progress-toward-agi/measuring-progress-toward-agi-a-cognitive-framework.pdf))
-- [ ] Survey cognitive science literature for your chosen ability
-- [ ] Review existing AI benchmarks for gaps
-
-### Week 2 (Mar 24–30): Design
-
-- [ ] Define your task format and scoring metric
-- [ ] Build a task generator (Python)
-- [ ] Create 50–100 pilot tasks
-
-### Week 3 (Mar 31 – Apr 6): Test & Iterate
-
-- [ ] Run on Kaggle Community Benchmarks against frontier models
-- [ ] Analyze results — does it discriminate between models?
-- [ ] Refine difficulty, fix ambiguities
-
-### Week 4 (Apr 7–16): Polish & Submit
-
-- [ ] Scale to full benchmark (200+ tasks)
-- [ ] Write documentation and rationale
-- [ ] Final submission before April 16
+1. 🧱 **Build Tasks** — Individual evaluation problems  
+2. 🧪 **Create Benchmarks** — Group tasks into a cognitive test suite  
+3. 🤖 **Evaluate Models** — Run benchmarks against frontier AI systems  
 
 ---
 
-## Key Resources
+## 🚀 Winning Strategy
 
-- [DeepMind Blog Post: Measuring Progress Towards AGI](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/)
-- [DeepMind Paper (PDF)](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/measuring-progress-toward-agi/measuring-progress-toward-agi-a-cognitive-framework.pdf)
-- [Kaggle Competition Page](https://www.kaggle.com/competitions/kaggle-measuring-agi)
-- [Kaggle Community Benchmarks Announcement](https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-community-benchmarks/)
-- [Google DeepMind Cognitive Framework - TechBuzz](https://www.techbuzz.ai/articles/google-deepmind-unveils-cognitive-framework-to-track-agi-progress)
+### 1. Understand the Objective
+
+This is **NOT machine learning training**.
+
+You are designing **cognitive evaluations**, similar to IQ tests.
+
+### 🧠 Judging Criteria
+
+- ✅ **Validity** — Does it measure the intended ability?  
+- 📊 **Difficulty Calibration** — Differentiates weak vs strong models  
+- 💡 **Novelty** — Tests what others don’t  
+- 🛡️ **Robustness** — Resistant to shortcuts/gaming  
+- 📈 **Scalability** — Tracks progress over time  
+
+---
+
+## 🎯 Track Breakdown & Ideas
+
+### 📚 1. Learning
+
+**Measures:** Ability to learn from minimal data  
+
+**Ideas:**
+- Few-shot learning with novel symbols  
+- Grammar/language induction  
+- Distribution shift adaptation  
+- Curriculum-based tasks  
+
+**Edge:** Use **completely new concepts** to avoid memorization.
+
+---
+
+### 🧠 2. Metacognition (🔥 High Opportunity)
+
+**Measures:** Self-awareness and calibration  
+
+**Ideas:**
+- Confidence calibration  
+- Predicting own performance  
+- Detecting unsolvable problems  
+- Knowing when to ask for help  
+
+**Edge:** Least explored → **high novelty potential**
+
+---
+
+### 🎯 3. Attention
+
+**Measures:** Focus & filtering relevant information  
+
+**Ideas:**
+- Needle-in-haystack tasks  
+- Distractor-heavy inputs  
+- Information overload scenarios  
+- Multi-step attention tasks  
+
+**Edge:** Require **dynamic prioritization**, not just retrieval.
+
+---
+
+### 🧩 4. Executive Functions
+
+**Measures:** Planning, inhibition, flexibility  
+
+**Ideas:**
+- Multi-step constrained planning  
+- Stroop-like inhibition tasks  
+- Task switching  
+- Conflicting goals  
+
+**Edge:** Adapt neuroscience tests like Wisconsin Card Sorting, Tower of London, Stroop Test.
+
+---
+
+### 👥 5. Social Cognition
+
+**Measures:** Social reasoning & theory of mind  
+
+**Ideas:**
+- Nested beliefs ("A thinks B thinks...")  
+- Sarcasm/irony understanding  
+- Social outcome prediction  
+- Cultural norms & deception  
+
+**Edge:** Focus on **multi-agent reasoning complexity**
+
+---
+
+## 🧱 Design Principles
+
+1. 📚 Ground in Cognitive Science  
+2. 🔄 Use Procedural Generation  
+3. 📈 Include Difficulty Gradient  
+4. 🤖 Compare Models  
+5. 📏 Define Clear Metrics  
+6. 📝 Write Strong Documentation  
+
+---
+
+## 🏆 Recommended Approach
+
+1. Focus on Metacognition or Social Cognition  
+2. Study DeepMind framework  
+3. Analyze existing benchmarks  
+4. Build a task generator  
+5. Test early  
+6. Focus deeply on one track  
+
+---
+
+## 📅 Quick-Start Plan
+
+### Week 1
+- [ ] Read paper  
+- [ ] Study literature  
+- [ ] Review benchmarks  
+
+### Week 2
+- [ ] Define tasks  
+- [ ] Build generator  
+- [ ] Create pilot set  
+
+### Week 3
+- [ ] Run tests  
+- [ ] Analyze results  
+- [ ] Refine  
+
+### Week 4
+- [ ] Scale benchmark  
+- [ ] Write docs  
+- [ ] Submit  
+
+---
+
+## 🔗 Resources
+
+- https://www.kaggle.com/competitions/kaggle-measuring-agi  
+- https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/  
+- https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/measuring-progress-toward-agi/measuring-progress-toward-agi-a-cognitive-framework.pdf  
+
+---
+
+## 🧠 Final Insight
+
+This is not about building smarter models — it's about **measuring intelligence itself**.
